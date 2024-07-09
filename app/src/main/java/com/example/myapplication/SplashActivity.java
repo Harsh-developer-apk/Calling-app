@@ -11,11 +11,11 @@ public class SplashActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
-        Intent main = new Intent(this,MainActivity.class);
+        Intent recycle = new Intent(this,Recycle.class);
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                startActivity(main);
+                startActivity(recycle);
                 finish();
             }
         },2250);
